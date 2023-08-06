@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do Web-Application</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>To-Do List Web App</h1>
+    </div>
+    <div class ="containermain">
+    <div class="container">
+        <div class="form">
+            <div class="input-box">
+                <input type="text" id="titleInput" placeholder="Title (compulsory)">
+            </div>
+            <div class="input-box">
+                <textarea id="descInput" placeholder="Description"></textarea>
+            </div>
+            <button onclick="saveTask()">SAVE</button>
+            <p class="message" id="message"></p>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="tasks" id="taskList">
+            <div class="task-columns">
+                <div class="title">Title</div>
+                <div class="description">Description</div>
+                <div class="delete">Delete</div>
+            </div>
+            <hr>
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

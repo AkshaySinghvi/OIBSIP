@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: hsla(210, 76%, 32%, 0.658);
+}
+
+.header {
+    background-color: #f9f9f9;
+    text-align: left;
+    padding: 10px;
+    padding-left: 90px;
+    padding-bottom: 40px;
+    border-radius: 3px;
+    height: 50px;
+}
+.containermain{
+    display: inline-block;
+    display: flex;
+    margin-top: 50px;
+    
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ffffff; 
+    width: fit-content;
+    padding-left: 35px;
+    margin-left: 90px;
+    height: 350px;
+    border-radius: 9px;
+    box-shadow: 0 2px 4px rgba(0.1, .1, .1, .1);
+}
+.container2{
+    padding-left: 100px;
+    
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.form .input-box {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 300px;
+    
+    
+    
+}
+
+.form input[type="text"],
+.form textarea {
+    display: flex;
+    border: none;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 3px;
+    width: 100%;
+    outline: none;
+    
+}
+
+.form textarea {
+
+    resize: none;
+    display: flex;
+    min-height: 170px;
+}
+
+.form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-top: 30px;
+    width: 250px;
+    font-weight: bold;
+    font-size: medium;
+}
+
+
+.message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+
+.tasks {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 400%;
+    
+}
+
+
+.task-columns {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr .3fr;
+    font-weight: bold;
+    margin-bottom: 5px;
+    
+
+    
+}
+
+
+.task-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.delete {
+    cursor: pointer;
+    
+
+}
+
+.delete:hover {
+    color: red;
+}
+    

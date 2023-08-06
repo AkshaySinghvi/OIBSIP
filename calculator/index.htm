@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BODMAS Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="keys">
+            <!-- Row 1 -->
+            <button class="operator" onclick="appendToDisplay('(')">(</button>
+            <button class="operator" onclick="appendToDisplay(')')">)</button>
+            <button class="operator" onclick="getAnswer()">ans</button>
+            <button class="operator" onclick="backspace()">del</button>
+            <button class="clear" onclick="clearDisplay()">clear</button>
+
+            <!-- Row 2 -->
+            <button class="number" onclick="appendToDisplay('7')">7</button>
+            <button class="number" onclick="appendToDisplay('8')">8</button>
+            <button class="number" onclick="appendToDisplay('9')">9</button>
+            <button class="operator" onclick="appendToDisplay('%')">%</button>
+            <button class="operator" onclick="appendToDisplay('sqrt(')">√</button>
+
+            <!-- Row 3 -->
+            <button class="number" onclick="appendToDisplay('4')">4</button>
+            <button class="number" onclick="appendToDisplay('5')">5</button>
+            <button class="number" onclick="appendToDisplay('6')">6</button>
+            <button class="operator" onclick="appendToDisplay('*')">x</button>
+            <button class="operator" onclick="appendToDisplay('+')">+</button>
+
+            <!-- Row 4 -->
+            <button class="number" onclick="appendToDisplay('1')">1</button>
+            <button class="number" onclick="appendToDisplay('2')">2</button>
+            <button class="number" onclick="appendToDisplay('3')">3</button>
+            <button class="operator" onclick="appendToDisplay('/')">÷</button>
+            <button class="operator" onclick="appendToDisplay('-')">-</button>
+
+            <!-- Row 5 -->
+            <button class="number" onclick="appendToDisplay('.')">.</button>
+            <button class="number" onclick="appendToDisplay('0')">0</button>
+            <button class="operator" onclick="toggleSign()">+/-</button>
+            <button class="enter" onclick="calculate()">Enter</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
